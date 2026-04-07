@@ -1,0 +1,64 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.badge {
+  background: #e5edff;
+  color: #4f6df5;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.role {
+  color: #4f6df5;
+  margin-bottom: 15px;
+}
+
+.desc {
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.buttons a {
+   margin-right: 15px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.hero-img img {
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-img img {
+    width: 250px;
+  }
+}

@@ -38,6 +38,18 @@ h1 {
   padding: 12px 20px;
   border-radius: 8px;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.buttons a.primary:hover {
+  background: #3d5ce0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(79, 109, 245, 0.4);
+}
+
+.buttons a.secondary:hover {
+  background: #f0f0f0;
+  border-color: #999;
 }
 
 .hero-img img {

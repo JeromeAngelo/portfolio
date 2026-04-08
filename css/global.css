@@ -59,6 +59,34 @@ nav a:hover {
   text-decoration: none;
 }
 
+/* THEME TOGGLE BUTTON */
+#theme-toggle {
+  background: transparent;
+  color: #4f6df5;
+  border: 2px solid #4f6df5;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  margin-left: 8px;
+}
+
+#theme-toggle:hover {
+  background: #4f6df5;
+  color: white;
+}
+
+body.dark #theme-toggle {
+  border-color: #4f6df5;
+  color: #4f6df5;
+}
+
+body.dark #theme-toggle:hover {
+  background: #4f6df5;
+  color: white;
+}
+
 .primary {
   background: #4f6df5;
   color: white;

@@ -1,0 +1,409 @@
+.contact {
+  padding: 40px 60px;
+  background: #f8fafc;
+  min-height: calc(100vh - 80px);
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-header h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.contact-header .highlight {
+  color: #4f6df5;
+}
+
+.contact-intro {
+  color: #475569;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Grid Layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+/* Main Content */
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Primary Email Card */
+.contact-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact-card.primary-card {
+  background: linear-gradient(135deg, #4f6df5 0%, #3d5ce0 100%);
+  border: none;
+  color: white;
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.card-icon svg {
+  width: 28px;
+  height: 28px;
+  color: white;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+.contact-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  transition: border-color 0.3s ease;
+}
+
+.contact-link:hover {
+  border-color: white;
+}
+
+/* Social Grid */
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.social-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.social-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.social-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.social-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Platform Colors */
+.linkedin .social-icon {
+  background: #e5edff;
+  color: #4f6df5;
+}
+
+.linkedin:hover {
+  border-color: #4f6df5;
+}
+
+.github .social-icon {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.github:hover {
+  border-color: #334155;
+}
+
+.facebook .social-icon {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.facebook:hover {
+  border-color: #2563eb;
+}
+
+.instagram .social-icon {
+  background: #fce7f3;
+  color: #db2777;
+}
+
+.instagram:hover {
+  border-color: #db2777;
+}
+
+.telegram .social-icon {
+  background: #ccfbf1;
+  color: #0d9488;
+}
+
+.telegram:hover {
+  border-color: #0d9488;
+}
+
+.social-info h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 3px;
+}
+
+.social-info span {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* Sidebar */
+.contact-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.info-card h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.info-card p {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.timezone {
+  display: inline-block;
+  margin-top: 8px;
+  background: #f1f5f9;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Status Card */
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #10b981;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.status-text {
+  font-size: 13px;
+  color: #10b981;
+  font-weight: 600;
+}
+
+/* Footer */
+.contact-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  background: #f1f5f9;
+  margin-top: 60px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.contact-footer p {
+  font-size: 14px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  font-size: 14px;
+  color: #475569;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #4f6df5;
+}
+
+/* Dark Mode */
+body.dark .contact {
+  background: #0f172a;
+}
+
+body.dark .contact-header h1,
+body.dark .card-content h3,
+body.dark .social-info h4,
+body.dark .info-card h3 {
+  color: #e2e8f0;
+}
+
+body.dark .contact-intro,
+body.dark .info-card p,
+body.dark .social-info span {
+  color: #94a3b8;
+}
+
+body.dark .contact-card,
+body.dark .social-card,
+body.dark .info-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+body.dark .linkedin .social-icon {
+  background: #334155;
+}
+
+body.dark .github .social-icon {
+  background: #334155;
+}
+
+body.dark .facebook .social-icon {
+  background: #334155;
+}
+
+body.dark .instagram .social-icon {
+  background: #334155;
+}
+
+body.dark .telegram .social-icon {
+  background: #334155;
+}
+
+body.dark .timezone {
+  background: #334155;
+  color: #94a3b8;
+}
+
+body.dark .contact-footer {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+body.dark .contact-footer p {
+  color: #e2e8f0;
+}
+
+body.dark .footer-links a {
+  color: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    padding: 20px;
+  }
+
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-footer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-header h1 {
+    font-size: 32px;
+  }
+
+  .social-card {
+    padding: 18px;
+  }
+
+  .contact-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}

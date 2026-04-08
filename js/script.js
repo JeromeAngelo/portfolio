@@ -21,4 +21,21 @@ window.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("dark");
     toggleBtn.textContent = "☀️";
   }
+
+  // Resume download functionality
+  const downloadBtn = document.getElementById("download-resume");
+  if (downloadBtn) {
+    downloadBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const resumeUrl = downloadBtn.getAttribute("data-resume-url");
+      if (resumeUrl) {
+        const link = document.createElement("a");
+        link.href = resumeUrl;
+        link.download = "Jerome-Angelo-Pena-Resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    });
+  }
 });
